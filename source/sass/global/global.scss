@@ -1,0 +1,15 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

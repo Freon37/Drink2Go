@@ -1,0 +1,96 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-list__item {
+  //
+}
+
+.user-list__item:not(:last-of-type) {
+  @media ($desktop) {
+    margin-right: 20px;
+  }
+}
+
+.user-list__link {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px;
+
+  @media ($tablet) {
+    padding: 40px 30px;
+  }
+
+  @media ($desktop) {
+    padding: 32px 20px 32px 44px;
+
+    @include hoverFocus {
+      &::before {
+        background-color: $base-primary;
+      }
+    }
+
+    @include active {
+      &::before {
+        background-color: $base-primary;
+      }
+    }
+  }
+}
+
+.user-list__link-account {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 16px;
+    height: 16px;
+    mask: url("../../images/icons/stack.svg#account");
+    background-color: $base-black;
+
+    @media ($tablet) {
+      top: 32px;
+      right: 20px;
+    }
+
+    @media ($desktop) {
+      top: 32px;
+      left: 20px;
+    }
+  }
+}
+
+.user-list__link-basket {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 16px;
+    height: 16px;
+    mask: url("../../images/icons/stack.svg#basket");
+    background-color: $base-black;
+
+    @media ($tablet) {
+      top: 32px;
+      right: 20px;
+    }
+
+    @media ($desktop) {
+      top: 32px;
+      left: 20px;
+    }
+  }
+}
+
+.user-list__link-text {
+  display: none;
+
+  @media ($desktop) {
+    display: block;
+    color: inherit;
+  }
+}

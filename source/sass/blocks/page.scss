@@ -1,0 +1,25 @@
+.page {
+  position: relative;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.page__header {
+  position: absolute;
+
+  @media ($tablet) {
+    position: static;
+  }
+}
+
+.page__main {
+  margin-top: 60px;
+
+  @media ($tablet) {
+    margin-top: 0;
+  }
+}

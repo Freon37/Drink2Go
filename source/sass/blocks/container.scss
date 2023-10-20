@@ -1,0 +1,16 @@
+.container {
+  min-width: 280px;
+
+  padding-left: calc(50% - 140px);
+  padding-right: calc(50% - 140px);
+
+  @media ($tablet) {
+    padding-left: calc(50% - 364px);
+    padding-right: calc(50% - 364px);
+  }
+
+  @media ($desktop) {
+    padding-left: calc(50% - 680px);
+    padding-right: calc(50% - 680px);
+  }
+}

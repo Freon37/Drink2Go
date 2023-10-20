@@ -1,0 +1,17 @@
+// переменные
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+// базовые свойства
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/visually-hidden.scss";
+
+// блоки компонентов
+@import "blocks/container.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-link.scss";
+@import "blocks/page.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
