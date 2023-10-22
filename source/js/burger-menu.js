@@ -1,6 +1,6 @@
-import { navMain } from "../../js/dom_elements.js";
+import { navMain } from '../../js/dom-elements.js';
 
-const showBurgerMenu = () =>  {
+const showBurgerMenu = () => {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');

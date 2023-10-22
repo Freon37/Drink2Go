@@ -1,7 +1,7 @@
 /* в этот файл добавляет скрипты*/
-import { showBurgerMenu } from "../../js/burger_menu.js";
-import { navToogle, siteMenu, slides } from "../../js/dom_elements.js";
-import {switchPagination, moveLeft, moveRight} from "../../js/slider.js";
+import { showBurgerMenu } from '../../js/burger-menu.js';
+import { navToogle, siteMenu, slides } from '../../js/dom-elements.js';
+import {switchPagination, moveLeft, moveRight} from '../../js/slider.js';
 
 navToogle.addEventListener('click', showBurgerMenu);
 
@@ -26,16 +26,17 @@ document.addEventListener('click', (evt) => {
   let target;
   let activeSlideIndex;
 
-  if (target = evt.target.closest(".pagination__item-button")) {
+  // eslint-disable-next-line no-cond-assign
+  if (target = evt.target.closest('.pagination__item-button')) {
     activeSlideIndex = target.dataset.index;
     switchPagination(activeSlideIndex);
   }
-
-  if (target = evt.target.closest(".controls__button--next")) {
+  // eslint-disable-next-line no-cond-assign
+  if (target = evt.target.closest('.controls__button--next')) {
     moveLeft();
   }
-
-  if (target = evt.target.closest(".controls__button--prev")) {
+  // eslint-disable-next-line no-cond-assign
+  if (target = evt.target.closest('.controls__button--prev')) {
     moveRight();
   }
 });
