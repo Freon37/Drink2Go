@@ -1,0 +1,108 @@
+.advantage {
+  padding-top: 65px;
+  background-repeat: no-repeat;
+
+  @media ($tablet) {
+    padding-top: 0;
+    padding-left: 70px;
+    text-align: start;
+  }
+
+  @media ($desktop) {
+    padding-left: 0;
+    padding-top: 76px;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 56px;
+
+    @media ($tablet) {
+      left: 0;
+      transform: translateX(0);
+    }
+
+    @media ($desktop) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--speed {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#speed");
+    }
+  }
+
+  &--comfort {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media ($tablet) {
+      padding-left: 70px;
+      padding-right: 0;
+    }
+
+    @media ($desktop) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#comfort");
+    }
+  }
+
+  &--energy {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#energy");
+    }
+  }
+
+  &--eco {
+    @media ($tablet) {
+      padding-right: 70px;
+    }
+
+    @media ($desktop) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#eco");
+    }
+  }
+}
+
+.advantage__title {
+  margin: 0 0 5px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media ($tablet) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 7px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 10px;
+  }
+}
+
+.advantage__description {
+  margin: 0;
+
+  @media ($tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

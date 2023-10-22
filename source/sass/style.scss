@@ -6,7 +6,6 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
-@import "global/hidden.scss";
 
 // блоки компонентов
 @import "blocks/container.scss";
@@ -22,3 +21,7 @@
 @import "blocks/site-list.scss";
 @import "blocks/slider.scss";
 @import "blocks/user-list.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage.scss";
+@import "blocks/label.scss";
+@import "blocks/title.scss";
