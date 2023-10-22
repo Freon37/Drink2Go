@@ -10,9 +10,11 @@
 
 .page__header {
   position: absolute;
+  z-index: 1;
 
   @media ($tablet) {
     position: static;
+    z-index: auto;
   }
 }
 

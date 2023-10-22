@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+
+
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  background-color: $flat-white;
+
+  @media ($tablet) {
+    padding-top: 50px;
+  }
+
+  @media ($desktop) {
+    padding-top: 30px;
+    padding-bottom: 57px;
+  }
+}
+
+.hero__slider {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0 -25px;
+
+  @media ($tablet) {
+    height: 640px;
+    margin: 0 -20px;
+  }
+
+  @media ($desktop) {
+    height: 714px;
+    margin: 0 -40px;
+  }
+}
+
+.hero__pagination {
+  display: none;
+  margin: 0;
+
+  @media ($desktop) {
+    display: block;
+  }
+}

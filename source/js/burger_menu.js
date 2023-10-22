@@ -1,13 +1,13 @@
-// import { navMain } from "../../js/dom_elements.js";
+import { navMain } from "../../js/dom_elements.js";
 
-// const showBurgerMenu = () =>  {
-//   if (navMain.classList.contains('main-nav--closed')) {
-//     navMain.classList.remove('main-nav--closed');
-//     navMain.classList.add('main-nav--opened');
-//   } else {
-//     navMain.classList.add('main-nav--closed');
-//     navMain.classList.remove('main-nav--opened');
-//   }
-// };
+const showBurgerMenu = () =>  {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+};
 
-// export {showBurgerMenu};
+export {showBurgerMenu};

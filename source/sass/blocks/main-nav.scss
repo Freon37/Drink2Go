@@ -19,16 +19,6 @@
 
 .main-nav__logo-image {
   display: block;
-  width: 32px;
-  height: 36px;
-
-  @media ($tablet) {
-    width: 82px;
-  }
-
-  @media ($desktop) {
-    width: 170px;
-  }
 }
 
 .main-nav__logo-description {

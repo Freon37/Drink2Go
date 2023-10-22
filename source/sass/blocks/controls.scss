@@ -1,0 +1,43 @@
+.controls {
+  display: flex;
+}
+
+.controls__button {
+  color: $base-primary;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+
+  @include active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    color: $base-grey;
+  }
+
+  @media ($tablet) {
+    width: 80px;
+  }
+
+  &--prev {
+    margin-right: 270px;
+
+    @media ($tablet) {
+      margin-right: 608px;
+    }
+
+    @media ($desktop) {
+      margin-right: 1280px;
+    }
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.controls__button-icon {
+  //
+}
