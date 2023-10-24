@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  text-align: center;
 
 
   padding-top: 20px;
@@ -32,13 +33,29 @@
   }
 }
 
+.hero__wrapper-slider {
+  width: 280px;
+  overflow: hidden;
+
+  @media ($tablet) {
+    width: 728px;
+  }
+
+  @media ($desktop) {
+    width: 1360px;
+  }
+}
+
 .hero__slider {
   margin: 0;
   padding: 0;
   list-style-type: none;
   position: relative;
+  left: 0;
   z-index: 1;
+  transition: 1s;
 }
+
 
 .hero__controls {
   position: absolute;

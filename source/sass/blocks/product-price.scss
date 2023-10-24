@@ -1,6 +1,6 @@
 .product-price {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, min-content);
   gap: 6px;
   align-content: center;
   line-height: 32px;
