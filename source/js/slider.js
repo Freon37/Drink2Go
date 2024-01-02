@@ -27,20 +27,20 @@ const lockingEndButton = () => {
 };
 
 const thisSlide = (index) => {
-  for (let paginationButton of paginationButtons) {
+  for (const paginationButton of paginationButtons) {
     paginationButton.classList.remove('pagination__item-button--current');
   }
   paginationButtons[index].classList.add('pagination__item-button--current');
 };
 
 const nextSlide = () => {
-  currentWIdth = document.querySelector(".hero__wrapper-slider").offsetWidth;
+  currentWIdth = document.querySelector('.hero__wrapper-slider').offsetWidth;
   if (position === 0) {
     lockingStartButton();
   }
   position += currentWIdth;
   paginationButtonIndex++;
-  slider.style.left = -position + 'px';
+  slider.style.left = `${-position}px`;
   thisSlide(paginationButtonIndex);
   if (position === (paginationButtons.length - 1) * currentWIdth) {
     lockingEndButton();
@@ -50,13 +50,13 @@ const nextSlide = () => {
 };
 
 const prevSlide = () => {
-  currentWIdth = document.querySelector(".hero__wrapper-slider").offsetWidth;
+  currentWIdth = document.querySelector('.hero__wrapper-slider').offsetWidth;
   if (position === (paginationButtons.length - 1) * currentWIdth) {
     lockingEndButton();
   }
   position -= currentWIdth;
   paginationButtonIndex--;
-  slider.style.left = -position + 'px';
+  slider.style.left = `${-position}px`;
   thisSlide(paginationButtonIndex);
   if (position === 0) {
     lockingStartButton();
@@ -72,9 +72,9 @@ prevButton.addEventListener('click', prevSlide);
 
 paginationButtons.forEach((paginationButton, index) => {
   paginationButton.addEventListener('click', () => {
-    currentWIdth = document.querySelector(".hero__wrapper-slider").offsetWidth;
+    currentWIdth = document.querySelector('.hero__wrapper-slider').offsetWidth;
     position = currentWIdth * index;
-    if (index == 0) {
+    if (index === 0) {
       lockingStartButton();
     }
     if (index === (paginationButtons.length - 1)) {
@@ -84,8 +84,8 @@ paginationButtons.forEach((paginationButton, index) => {
       unlockingButtons();
     }
 
-    slider.style.left = -position + 'px';
+    slider.style.left = `${-position}px`;
     paginationButtonIndex = index;
     thisSlide(paginationButtonIndex);
-  })
+  });
 });

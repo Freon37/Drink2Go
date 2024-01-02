@@ -1,7 +1,7 @@
 /* в этот файл добавляет скрипты*/
 import { showBurgerMenu } from '../../js/burger-menu.js';
-import { navToogle, siteMenu /*, slides */ } from '../../js/dom-elements.js';
-import  '../../js/slider.js';
+import { navToogle, siteMenu } from '../../js/dom-elements.js';
+import '../../js/slider.js';
 
 navToogle.addEventListener('click', showBurgerMenu);
 
